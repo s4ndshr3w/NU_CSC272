@@ -1,0 +1,34 @@
+// This is a CLASS.
+// A class is a blueprint that describes what a Car has and what it can do.
+public class Car {
+
+    // Instance variables (what a car has)
+    String color;
+    int speed;
+
+    // Method (what a car can do)
+    void drive() {
+        System.out.println("The " + color + " car is driving at " + speed + " mph.");
+    }
+}
+
+//This is objects being used for that class
+public class Main {
+    public static void main(String[] args) {
+
+        // These are OBJECTS.
+        // Objects are created from the Car class using the 'new' keyword
+
+        Car car1 = new Car(); // First car object
+        car1.color = "red";
+        car1.speed = 50;
+
+        Car car2 = new Car(); // Second car object
+        car2.color = "blue";
+        car2.speed = 80;
+
+        // Each object uses the same class, but each has its own values for color and speed
+        car1.drive();
+        car2.drive();
+    }
+}
